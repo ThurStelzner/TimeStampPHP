@@ -49,13 +49,13 @@
     </header>
     <form method="POST">
         <select name="tipos" id="tipos">
-            <option value="0">Formato Bancos de Dados</option>
-            <option value="1">Formato Padrão Brasileiro</option>
-            <option value="2">Formato Nome de Arquivos e Logs</option>
-            <option value="3">Formato Horário Simples</option>
-            <option value="4">Formato Integrações com APIs e JavaScript</option>
+            <option value="0" <?= (isset($_POST['tipos']) && $_POST['tipos'] == "0") ? 'selected' : '' ?>>Formato Bancos de Dados</option>
+            <option value="1" <?= (isset($_POST['tipos']) && $_POST['tipos'] == "1") ? 'selected' : '' ?>>Formato Padrão Brasileiro</option>
+            <option value="2" <?= (isset($_POST['tipos']) && $_POST['tipos'] == "2") ? 'selected' : '' ?>>Formato Nome de Arquivos e Logs</option>
+            <option value="3" <?= (isset($_POST['tipos']) && $_POST['tipos'] == "3") ? 'selected' : '' ?>>Formato Horário Simples</option>
+            <option value="4" <?= (isset($_POST['tipos']) && $_POST['tipos'] == "4") ? 'selected' : '' ?>>Formato Integrações com APIs e JavaScript</option>
         </select>
-        <button type="submit" class="mostrar">Mostrar</button>
+        <button type="submit" onclick="mudarSelect()" class="mostrar">Mostrar</button>
     </form>
     <div class="exemplo">
         <h2>

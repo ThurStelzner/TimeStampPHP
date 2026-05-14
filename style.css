@@ -26,12 +26,14 @@ footer {
 button, select{
     font-family: "Roboto", sans-serif;
     padding: 10px 20px;
+    font-size: larger;
 }
 
 select {
     border-top: none;
     border-left: none;
     border-right: none;
+    outline: none;
 }
 
 a {
