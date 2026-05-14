@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 60px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 5rem;
+}
+
+button, select{
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px;
+}
+
+select {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(177, 177, 255);
+    border: 2px solid blue;
+    color: black;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background-color: rgb(217, 217, 255);
+}
+
+h2 {
+    margin-top: 5rem;
+}
+
+.codigo {
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+.codigoEscrita {
+    color: white;
+    font-family: "Intel One Mono", monospace;
+}
+
+.l {
+    position: fixed;
+    left: 5rem;
+}
+
+.r {
+    position: fixed;
+    right: 5rem;
+}
